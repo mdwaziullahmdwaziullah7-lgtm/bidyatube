@@ -244,7 +244,7 @@ async function sendMessage() {
   document.getElementById('loadingBar').classList.add('active');
   try {
     const videoList = videos.map(v => `- ${v.title} (${v.subject}, ${v.channel})`).join('\n');
-    const API_KEY = 'YOUR_OPENROUTER_KEY_HERE';
+    const API_KEY = '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';
     const resp = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${API_KEY}` },
